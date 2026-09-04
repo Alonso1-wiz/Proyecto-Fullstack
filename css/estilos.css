@@ -3,10 +3,11 @@ body{
     background-color: #0A192F;
     color: #007BFF;
     line-height: 1.6;
+    margin: 0;
 }
 
 img{
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -15,6 +16,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
 header {
     background-color: var(#0A192F);
     color: white;
@@ -23,18 +25,20 @@ header {
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
+    gap: 40px;
 }
+
+
 .logo-container h1 {
-    font-size: 5;
+    font-size: 32px;
     margin: 0;
 }
 
 
 #form-filtro{
     align-items: center;
-    padding: 2;
+    padding: 0;
     text-align: left;
-    float: left;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
@@ -44,7 +48,7 @@ header {
 
 /* estilo para tarjeta*/
 main {
-    padding: 2rem;
+    padding: 32px;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -52,9 +56,91 @@ main {
 .tarjeta-producto, .categoria-item{
     background-color: white;
     border-radius: 8px;
-    max-width: 60%;
-    padding: 1.5;
-    text-align: right;
-    float: right;
+    padding: 24px;
+    text-align: left;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+.catalogo{
+    display: grid;
+
+    grid-template-columns: 230px 1fr;
+    gap: 40px;
+}
+
+.filtros{
+
+    border-right: 1px solid white;
+
+    padding-right: 25px;
+
+}
+
+.filtros h2{
+    margin-top: 0;
+}
+
+
+
+.contenedor-productos{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+
+
+.tarjeta-producto figure{
+    height: 280px;
+
+    margin: 0px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.tarjeta-producto img {
+    width: 90%;
+
+    height: 90%;
+
+    object-fit: contain;
+}
+
+
+.tarjeta-producto h3{
+    font-size: 18px;
+
+    margin: 10px 0;
+}
+
+
+.tarjeta-producto p {
+    font-size: 14px;
+
+    color: grey;
+}
+
+
+.codigo-item {
+    font-size: 13px;
+
+    color: gray;
+}
+
+
+.tarjeta-producto data{
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: black;
 }
