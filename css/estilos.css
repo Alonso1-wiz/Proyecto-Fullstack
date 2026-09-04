@@ -1,0 +1,53 @@
+body{
+    font-family: var(arial);
+    background-color: #0A192F;
+    color: #007BFF;
+    line-height: 1.6;
+}
+
+img{
+    max-width: 40%;
+    height: auto;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    background-color: var(#0A192F);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+.logo-container h1 {
+    font-size: 5;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+/* estilo para tarjeta*/
+main {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.tarjeta-producto, .categoria-item{
+    background-color: white;
+    border-radius: 8px;
+    max-width: 60%;
+    padding: 1.5;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}

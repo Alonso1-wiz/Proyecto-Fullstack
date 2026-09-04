@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Productos - Sonido Vivo</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    
+
+    <header>
+
+        <div class="logo-container">
+            <h1>Sonido Vivo</h1>
+        </div>
+
+        <button id="btn-menu" arial-expanded="false" arial-controls="menu-principal" aria-label="Abrir el menu de navegación">
+            &#9776; <!--por lo que entiendo, esto es para el icono de hamburguesa-->
+        </button>
+
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="principal.html" class="activo">Inicio</a></li> <!--aqui tenemos que agregar las otras 2, producto y detalle-->
+                <li><a href="productos.html">Catalogo</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <aside>
+            <h2>Filtros</h2>
+            <Form>
+                <fieldset>
+                    <legend>Marca</legend>
+
+                    <div>
+                        <input type="checkbox" name="marca" id="marca-yamaha" value="yamaha">
+                        <label for="marca-yamaha">Yamaha</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="marca" id="marca-fender" value="fender">
+                        <label for="marca-fender">Fender</label>
+                    </div>
+
+                    <div class="opcion-filtro">
+                        <input type="checkbox" id="marca-squier" name="marca" value="squier">
+                        <label for="marca-squier">Squier</label>
+                    </div>
+                    
+                    <div class="opcion-filtro">
+                        <input type="checkbox" id="marca-takamine" name="marca" value="takamine">
+                        <label for="marca-takamine">Takamine</label>
+                    </div>
+                    
+                    <div class="opcion-filtro">
+                        <input type="checkbox" id="marca-epiphone" name="marca" value="epiphone">
+                        <label for="marca-epiphone">Epiphone</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" >Aplicar Filtros</button>
+            </Form>
+        </aside>
+
+        <section>
+            <header>
+                <h2 id="titulo-listado">Instrumentos y Equipos</h2>
+                <p>Mostrado </p>
+            </header>
+
+            <div >
+                <!--primer producto, guitarra yamaha, intentemos mantener 1 o 2 productos x cada uno-->
+                <article class="tarjeta-producto">
+                    <figure>
+                        <img src="img/yamaha f310 acustica.webp" alt="guitarra acustica yamaha f310" loading="lazy">
+                    </figure>
+                    <div >
+                        <span class="codigo-item">Cód: GA001</span>
+                        <h3>Guitarra Acústica Folk</h3>
+                        <p><strong>Marca:</strong> Yamaha | <strong>Modelo:</strong> F310</p>
+                        <p>Stock: 8 unidades</p>
+                        <p><data value="129990">$129.990</data></p>
+                    </div>
+                </article>
+
+                <!--producto 2-->
+                <article class="tarjeta-producto">
+                    <figure>
+                        <img src="img/fender cd-60s acustica.webp" alt="guitarra acustica fender cd-60s" loading="lazy">
+                    </figure>
+                    <div >
+                        <span>Cod: GA002</span>
+                        <h3>Guitarra Acústica Dreadmought</h3>
+                        <p><Strong>Marca</Strong> Fender | <strong>Modelo:</strong>CD-60S</p>
+                        <p>Strock: 5 unidades</p>
+                        <p><data value="189990">$189.990</data></p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
 </body>
 </html>
