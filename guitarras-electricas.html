@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos - Sonido Vivo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+     <header>
+
+        <div class="logo-container">
+            <figure>
+                <img src="img/logotipo.jpg" alt="logo de sonido vivo">
+            </figure>
+            <h1>Sonido Vivo</h1>
+        </div>
+
+        <button id="btn-menu" arial-expanded="false" arial-controls="menu-principal" aria-label="Abrir el menu de navegación">
+            &#9776; <!--por lo que entiendo, esto es para el icono de hamburguesa-->
+        </button>
+
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="principal.html" class="activo">Inicio</a></li> <!--aqui tenemos que agregar las otras 2, producto y detalle-->
+                <li><a href="productos.html">Catalogo</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="catalogo">
+
+        <aside class="filtros">
+
+            <h2>Filtros</h2>
+
+            <Form id="form-filtro">
+
+                <fieldset>
+                    <legend>Marca</legend>
+
+                    <div>
+                        <input type="checkbox" name="marca" id="marca-yamaha" value="yamaha">
+                        <label for="marca-yamaha">Yamaha</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="marca" id="marca-fender" value="fender">
+                        <label for="marca-fender">Fender</label>
+                    </div>
+
+                    <div class="opcion-filtro">
+                        <input type="checkbox" id="marca-squier" name="marca" value="squier">
+                        <label for="marca-squier">Squier</label>
+                    </div>
+                    
+                    <div class="opcion-filtro">
+                        <input type="checkbox" id="marca-takamine" name="marca" value="takamine">
+                        <label for="marca-takamine">Takamine</label>
+                    </div>
+                    
+                    <div class="opcion-filtro">
+                        <input type="checkbox" id="marca-epiphone" name="marca" value="epiphone">
+                        <label for="marca-epiphone">Epiphone</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" >Aplicar Filtros</button>
+            </Form>
+        </aside>
+
+        <section>
+            <header>
+                <h2 id="titulo-listado">Instrumentos y Equipos</h2>
+                
+            </header>
+
+            <div class="contenedor-productos">
+                
+                <!--primer producto, guitarra yamaha, intentemos mantener 1 o 2 productos x cada uno-->
+                <article class="tarjeta-producto">
+                    <figure>
+                        <img src="img/squir affinity strat electrica.webp" alt="guitarra electrica Squier Stratocaster® Affinity" loading="lazy">
+                    </figure>
+                    <div >
+                        <span class="codigo-item">Cód: GE001</span>
+                        <h3>Guitarra Electrica Squier Stratocaster® Affinity</h3>
+                        <p><strong>Marca:</strong> Squier Stratocaster® Affinity | <strong>Modelo:</strong> Affinity Series™</p>
+                        <p>Stock: 8 unidades</p>
+                        <p><data value="399990">$399.990</data></p>
+                    </div>
+                </article>
+
+                <!--producto 2-->
+                <article class="tarjeta-producto">
+                    <figure>
+                        <img src="img/Yamaha RGX121Z Guitarra Eléctrica, Preto.jpg" alt="Guitarra Eléctrica Yamaha RGX121Z " loading="lazy">
+                    </figure>
+                    <div >
+                        <span class="codigo-item">Cod: GE002</span>
+                        <h3>Guitarra Eléctrica Yamaha RGX121Z</h3>
+                        <p><Strong>Marca</Strong> Yamaha | <strong>Modelo:</strong>RGX121Z</p>
+                        <p>Strock: 10 unidades</p>
+                        <p><data value="349990">$349.990</data></p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <div>
+            <p>&copy; 2026 Sonido vivo. Todos los derechos reservados.</p>
+            <address>
+                Viña del mar, Region de valparaiso
+            </address>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
