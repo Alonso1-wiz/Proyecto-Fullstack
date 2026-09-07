@@ -31,6 +31,21 @@ header {
     gap: 40px;
 }
 
+/* Asegura que el logo y el texto se mantengan alineados y sin formato de enlace */
+.enlace-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre el logo y el título */
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Mantiene el color blanco original */
+}
+
+/* Ajuste de la figura para que no empuje el diseño */
+.enlace-logo figure {
+    margin: 0;
+    width: 50px; /* Ajusta el ancho según tu imagen real */
+}
+
 /* Botón transparente y sin bordes */
 #btn-menu {
     background: transparent;
@@ -39,6 +54,7 @@ header {
     font-size: 30px;
     cursor: pointer;
 }
+
 
 /* Menú oculto en celulares hasta que se presione el botón */
 #menu-principal {
@@ -82,7 +98,37 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
+.bienvenida {
+    /* Fondo con un degradado sutil para dar profundidad. 
+       Si después tienes una foto ancha, puedes agregarla aquí usando url('ruta-imagen.jpg') */
+    background: linear-gradient(135deg, #087CD4 0%, #054a80 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    max-width: 1400px;
+}
 
+.hero-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.hero-contenido h2 {
+    font-size: 38px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra para despegar la letra del fondo */
+}
+
+.hero-contenido p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
 
 
 
@@ -98,7 +144,7 @@ main {
     border-radius: 8px;
     padding: 24px;
     text-align: left;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.35);
 }
 .categoria-menu{
     background-color: white;
@@ -106,7 +152,7 @@ main {
     padding: 10px;
     text-align: left;
     justify-content: left;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(1,0,0,0.35);
 }
 
 /*centrado de h3 menu */
