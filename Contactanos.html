@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="descripcion" content="Contacta con Sonido Vivo"> 
+  <link rel="stylesheet" href="css/estilos.css"> 
+  <title>Sonido Vivo - Contáctanos</title> 
+
+</head>
+
+<body>
+  <header> 
+    <div class="logo-container"> 
+      <a href="principal.html" class="enlace-logo"> 
+        <figure> 
+          <img src="img/logotipo.jpg" alt="Logo de Sonido Vivo"> 
+        </figure> 
+        <h1>Sonido Vivo</h1> 
+      </a> 
+    </div> 
+
+
+    <button id="btn-menu" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir el menú de navegación"> 
+      &#9776; 
+    </button> 
+    
+    <nav id="menu-principal"> 
+      <ul> 
+        <li><a href="principal.html" class="activo">Inicio</a></li> <!--aqui tenemos que agregar las otras 2, producto y detalle-->
+        <li><a href="productos.html">Catalogo</a></li>
+        <li><a href="Contactanos.html" class="activo">Contáctanos</a></li> 
+      </ul> 
+    </nav> 
+  </header>
+
+  <main>
+
+    <section class="bienvenida">
+      <div class="hero-contenido">
+        
+        <h2>Coctáctanos</h2>
+        
+        <p>¿Tienes alguna consulta, reclamo o sugerencia? Déjanos tu mensaje y te ayudaremos.</p>
+      </div>
+    </section>
+
+
+    <section class="formulario-contacto">
+      
+      <h2 class="centrado">Formulario de Contacto</h2>
+
+      <form id="form-contacto">
+
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" required>
+        </div>
+
+        <div>
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" name="correo" id="correo" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div>
+          <label for="motivo">Motivo de contacto:</label>
+          <select name="motivo" id="motivo" required>
+            <option value="">Seleccione una opción</option>
+            <option value="consulta">Consulta</option>
+            <option value="reclamo">Reclamo</option>
+            <option value="sugerencia">Sugerencia</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="mensajes">Mensaje:</label>
+          <textarea name="mensaje" id="mensaje" required></textarea>
+        </div>
+
+        <button type="submit">Enviar mensaje</button>
+        <p id="mensaje-confirmacion"></p>
+      </form>
+
+    </section>
+  </main>
+
+
+  <footer> 
+    <div> 
+      <p>&copy; 2026 Sonido Vivo. Todos los derechos reservados.</p> 
+      
+      <address> 
+        Viña del Mar, Región de Valparaíso 
+      </address> 
+    </div> 
+  </footer>
+
+</body>
+</html>

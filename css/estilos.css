@@ -112,7 +112,7 @@ header {
 }
 
 .hero-contenido {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 
 }
@@ -279,6 +279,26 @@ main {
     }
 }
 
+
+/* Medidas para que quede bien para el celulares */
+@media (max-width: 600px) {
+    .grilla-categoria{
+        grid-template-columns: repeat(2, 1fr);
+        gap:12px;
+    }
+
+    .catalogo{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    main{
+        padding: 15px;
+    }
+}
+
+
 /*footer*/
 footer {
     background-color: #087CD4; 
@@ -287,3 +307,98 @@ footer {
     margin-top: 60px; 
 }
 
+
+
+/*Estilo para el Formulario de Contacto*/
+
+form {
+  background-color: rgb(232, 232, 232);
+  width: 500px;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px black(0, 0, 0, 0.12);
+  
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.formulario-contacto h2{
+    margin-bottom: 25px;
+}
+
+
+#form_contacto {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px black;
+}
+
+#form-contacto label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: gray;
+    font-weight: bold;
+}
+
+#form-contacto input {
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    border: 1px solid gray; 
+    border-radius: 5px; 
+    font-size: 15px; 
+    font-family: Arial, sans-serif;
+}
+
+#form-contacto select {
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    border: 1px solid gray; 
+    border-radius: 5px; 
+    font-size: 15px; 
+    font-family: Arial, sans-serif;
+}
+
+#form-contacto textarea {
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    border: 1px solid gray; 
+    border-radius: 5px; 
+    font-size: 15px; 
+    font-family: Arial, sans-serif;
+}
+
+#form-contacto textarea {
+    resize: vertical;
+}
+
+#form-contacto button {
+    margin-top: 20px;
+    padding: 11px 20px;
+    background-color: #087CD4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+/* mensaje de confirmación */ 
+#mensaje-confirmacion { 
+    color: greenyellow; 
+    font-weight: bold; 
+} 
+
+
+/* campo con error */ 
+.campo-error { 
+    border: 2px solid red; 
+    background-color: wheat; 
+}
