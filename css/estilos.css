@@ -311,13 +311,13 @@ footer {
 
 /*Estilo para el Formulario de Contacto*/
 
-form {
-  background-color: rgb(232, 232, 232);
-  width: 500px;
-  padding: 28px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px black(0, 0, 0, 0.12);
-  
+#form-contacto {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px black;
 }
 
 .formulario-contacto {
@@ -330,7 +330,7 @@ form {
 }
 
 
-#form_contacto {
+#form-contacto {
     background-color: white;
     padding: 30px;
     border-radius: 8px;
@@ -392,7 +392,7 @@ form {
 
 /* mensaje de confirmación */ 
 #mensaje-confirmacion { 
-    color: greenyellow; 
+    color: green; 
     font-weight: bold; 
 } 
 
