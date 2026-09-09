@@ -1,106 +1,20 @@
-/* estilo para pagina general*/
-body{
-    font-family: var(arial);
+
+/* A */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* B */
+body {
+    font-family: Arial, sans-serif;
     background-color: white;
     color: #087CD4;
     line-height: 1.6;
     margin: 0;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    border-radius: 8px;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-header {
-    background-color: #087CD4;
-    color: white;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
-
-/* Asegura que el logo y el texto se mantengan alineados y sin formato de enlace */
-.enlace-logo {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Espacio entre el logo y el título */
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit; /* Mantiene el color blanco original */
-}
-
-/* Ajuste de la figura para que no empuje el diseño */
-.enlace-logo figure {
-    margin: 0;
-    width: 50px; /* Ajusta el ancho según tu imagen real */
-}
-
-/* Botón transparente y sin bordes */
-#btn-menu {
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-
-/* Menú oculto en celulares hasta que se presione el botón */
-#menu-principal {
-    width: 100%;
-    display: none; 
-    text-align: center;
-    margin-top: 15px;
-}
-
-#menu-principal ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#menu-principal li {
-    margin-bottom: 10px;
-}
-
-.logo-container{
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Espacio entre el logo y la palabra "Sonido Vivo" */
-}
-.logo-container figure {
-    margin: 0;
-    width: 50px; /* Ajusta este tamaño según tu imagen */
-}
-
-.logo-container h1 {
-    font-size: 32px;
-    margin: 0;
-}
-
-
-
-#form-filtro{
-    align-items: center;
-    padding: 0;
-    text-align: left;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
 .bienvenida {
-    /* Fondo con un degradado sutil para dar profundidad. 
-       Si después tienes una foto ancha, puedes agregarla aquí usando url('ruta-imagen.jpg') */
     background: linear-gradient(135deg, #087CD4 0%, #054a80 100%);
     color: white;
     text-align: center;
@@ -111,205 +25,133 @@ header {
     max-width: 1400px;
 }
 
-.hero-contenido {
-    max-width: 1200px;
-    margin: 0 auto;
-
+.btn-comprar {
+    background-color: #087CD4;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 1rem;
+    width: 100%; /* Botón adaptable en móvil */
 }
 
-.hero-contenido h2 {
-    font-size: 38px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra para despegar la letra del fondo */
+.btn-comprar:hover {
+    background-color: #054a80;
 }
 
-.hero-contenido p {
-    font-size: 20px;
-    margin-bottom: 40px;
-    opacity: 0.9;
+#btn-menu {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-
-
-/* estilo para tarjeta*/
-main {
-    padding: 32px;
-    max-width: 1400px;
-    margin: 0 auto;
+/* C */
+.campo-error { 
+    border: 2px solid red; 
+    background-color: wheat; 
 }
 
-.tarjeta-producto, .categoria-item{
-    background-color: white;
-    border-radius: 8px;
-    padding: 24px;
-    text-align: left;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.35);
-}
-.categoria-menu{
-    background-color: white;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: left;
-    justify-content: left;
-    box-shadow: 0 2px 5px rgba(1,0,0,0.35);
-}
-
-/*centrado de h3 menu */
-.centrado{
-    text-align: center;
-}
-.catalogo{
+.catalogo {
     display: grid;
-
     grid-template-columns: 230px 1fr;
     gap: 40px;
 }
 
-.filtros{
-
-    border-right: 1px solid white;
-    padding-right: 25px;
-
+.categoria-menu {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(1,0,0,0.35);
 }
 
-.filtros h2{
-    margin-top: 0;
+.centrado {
+    text-align: center;
 }
 
+.codigo-item {
+    font-size: 13px;
+    color: gray;
+}
 
+.contenedor-detalle-producto {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
 
-.contenedor-productos{
+.contenedor-precio {
+    margin: 1.5rem 0;
+}
+
+.contenedor-productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-
-
-.tarjeta-producto figure{
-    height: 280px;
-
-    margin: 0px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
+/* D */
+.detalle-descripcion-total {
+    border-top: 2px solid #eaeaea;
+    padding-top: 2rem;
+    margin-top: 2rem;
 }
 
-
-.tarjeta-producto img {
-    width: 90%;
-
-    height: 90%;
-
-    object-fit: contain;
+.detalle-descripcion-total h3, 
+.detalle-descripcion-total h4 {
+    color: #333;
+    margin-bottom: 1rem;
 }
 
-
-.tarjeta-producto h3{
-    font-size: 18px;
-
-    margin: 10px 0;
+.detalle-imagen img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-
-.tarjeta-producto p {
-    font-size: 14px;
-
-    color: grey;
+.detalle-info h1 {
+    font-size: 1.8rem;
+    margin: 0.5rem 0 1rem 0;
 }
 
-
-.codigo-item {
-    font-size: 13px;
-
-    color: gray;
-}
-
-
-.tarjeta-producto data{
-    font-size: 22px;
-
-    font-weight: bold;
-
-    color: black;
-}
-
-
-/* grilla para menu inicial*/
-/* le pedimos que cree 5 columnas que ocupan el mismo espacio, fraccionadas de 1 en una*/
-.grilla-categoria{
+.detalle-principal {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    /* y le damos espacio entre cada una*/
-    gap: 20px;
-    margin-top: 20px;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: 3rem;
 }
 
-
-
-
-/*medidas para el pc*/
-/* --- COMPORTAMIENTO ESCRITORIO (Tablets y PCs) --- */
-@media (min-width: 1280px) {
-    #btn-menu {
-        display: none; /* Ocultamos la hamburguesa en PC */
-    }
-
-    #menu-principal {
-        display: flex; /* Forzamos a que el menú sea visible */
-        width: auto;
-        margin-top: 0;
-        flex-grow: 1; /* Permite al menú ocupar el espacio disponible */
-        justify-content: right;
-        margin-left: 40px;
-    }
-
-    #menu-principal ul {
-        display: flex;
-        gap: 20px; /* Espaciado horizontal entre los enlaces */
-        padding: 0;
-    }
-
-    #menu-principal li {
-        margin-bottom: 0;
-    }
+.f {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 1.2rem;
 }
 
-
-/* Medidas para que quede bien para el celulares */
-@media (max-width: 600px) {
-    .grilla-categoria{
-        grid-template-columns: repeat(2, 1fr);
-        gap:12px;
-    }
-
-    .catalogo{
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-
-    main{
-        padding: 15px;
-    }
+.f h1 {
+    margin: 0.2rem 0;
+    font-size: 1.8rem;
 }
 
-
-/*footer*/
-footer {
-    background-color: #087CD4; 
-    color: white;
-    padding: 40px 20px;
-    margin-top: 60px; 
+/* F */
+.filtros {
+    border-right: 1px solid #ddd;
+    padding-right: 25px;
 }
 
-
-
-/*Estilo para el Formulario de Contacto*/
+.filtros h2 {
+    margin-top: 0;
+}
 
 #form-contacto {
     background-color: white;
@@ -320,21 +162,27 @@ footer {
     box-shadow: 0 2px 5px black;
 }
 
-.formulario-contacto {
-    max-width: 600px;
-    margin: 40px auto;
+#form-contacto button {
+    margin-top: 20px;
+    padding: 11px 20px;
+    background-color: #087CD4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
-.formulario-contacto h2{
-    margin-bottom: 25px;
-}
-
-
-#form-contacto {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px black;
+#form-contacto input,
+#form-contacto select,
+#form-contacto textarea {
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    border: 1px solid gray; 
+    border-radius: 5px; 
+    font-size: 15px; 
+    font-family: Arial, sans-serif;
 }
 
 #form-contacto label {
@@ -345,60 +193,259 @@ footer {
     font-weight: bold;
 }
 
-#form-contacto input {
-    width: 100%; 
-    padding: 10px; 
-    box-sizing: border-box; 
-    border: 1px solid gray; 
-    border-radius: 5px; 
-    font-size: 15px; 
-    font-family: Arial, sans-serif;
-}
-
-#form-contacto select {
-    width: 100%; 
-    padding: 10px; 
-    box-sizing: border-box; 
-    border: 1px solid gray; 
-    border-radius: 5px; 
-    font-size: 15px; 
-    font-family: Arial, sans-serif;
-}
-
-#form-contacto textarea {
-    width: 100%; 
-    padding: 10px; 
-    box-sizing: border-box; 
-    border: 1px solid gray; 
-    border-radius: 5px; 
-    font-size: 15px; 
-    font-family: Arial, sans-serif;
-}
-
 #form-contacto textarea {
     resize: vertical;
 }
 
-#form-contacto button {
-    margin-top: 20px;
-    padding: 11px 20px;
-    background-color: #087CD4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
+#form-filtro {
+    align-items: center;
+    padding: 0;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
+.formulario-contacto {
+    max-width: 600px;
+    margin: 40px auto;
+}
 
-/* mensaje de confirmación */ 
+.formulario-contacto h2 {
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #087CD4; 
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px; 
+}
+
+/* G */
+.grilla-categoria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+header {
+    background-color: #087CD4;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-contenido h2 {
+    font-size: 38px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-contenido p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* I */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+.enlace-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.enlace-logo figure {
+    margin: 0;
+    width: 50px;
+}
+
+.enlace-logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container figure {
+    margin: 0;
+    width: 50px;
+}
+
+.logo-container h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.lista-materiales {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+/* M */
+main {
+    padding: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 #mensaje-confirmacion { 
     color: green; 
     font-weight: bold; 
 } 
 
+#menu-principal {
+    width: 100%;
+    display: none; 
+    text-align: center;
+    margin-top: 15px;
+}
 
-/* campo con error */ 
-.campo-error { 
-    border: 2px solid red; 
-    background-color: wheat; 
+#menu-principal li {
+    margin-bottom: 10px;
+}
+
+#menu-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navegacion-atras {
+    margin-bottom: 1.5rem;
+}
+
+.navegacion-atras a {
+    text-decoration: none;
+    color: #087CD4;
+    font-weight: bold;
+}
+
+/* P */
+.precio-valor {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #087CD4;
+}
+
+/* T */
+.tarjeta-producto, 
+.categoria-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.35);
+}
+
+.tarjeta-producto data {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+
+.tarjeta-producto figure {
+    height: 280px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-producto h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.tarjeta-producto img {
+    width: 90%;
+    height: 90%;
+    object-object-fit: contain;
+}
+
+.tarjeta-producto p {
+    font-size: 14px;
+    color: grey;
+}
+
+/* medidas para pc y telefono */
+
+@media (min-width: 1280px) {
+    #btn-menu {
+        display: none;
+    }
+
+    #menu-principal {
+        display: flex;
+        width: auto;
+        margin-top: 0;
+        flex-grow: 1;
+        justify-content: right;
+        margin-left: 40px;
+    }
+
+    #menu-principal ul {
+        display: flex;
+        gap: 20px;
+        padding: 0;
+    }
+
+    #menu-principal li {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .detalle-principal {
+        grid-template-columns: 1fr; /* Pasa la imagen arriba y la info abajo en móviles */
+        gap: 1.5rem;
+    }
+
+    .contenedor-detalle-producto {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .catalogo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .grilla-categoria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: 1fr; /* Las tarjetas de productos se ven de a 1 por columna en celulares */
+        gap: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
 }

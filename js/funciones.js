@@ -38,7 +38,6 @@ formulario.addEventListener('submit', function(e) {
 
 
 
-//Validacion del correo
 
 const patronCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -55,9 +54,6 @@ if (correo.value.trim() !== '' && !patronCorreo.test(correo.value.trim())) {
     
 }
 
-
-    
- // y para terminar el mensaje despues de llenar todos los campos
  
  if (formularioValido) {
 
